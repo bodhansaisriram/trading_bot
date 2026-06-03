@@ -1,0 +1,9 @@
+2026-06-01 05:55:34 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20260601.log
+2026-06-01 05:55:37 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20260601.log
+2026-06-01 05:55:37 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-01 05:55:37 | INFO     | trading_bot.orders | Dry-run: order not submitted. params={'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': '0.001'}
+2026-06-01 05:55:40 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20260601.log
+2026-06-01 05:55:40 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2026-06-01 05:55:40 | INFO     | trading_bot.orders | Dry-run: order not submitted. params={'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'LIMIT', 'quantity': '0.001', 'price': '45000'}
+2026-06-01 05:55:40 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20260601.log
+2026-06-01 05:55:40 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)

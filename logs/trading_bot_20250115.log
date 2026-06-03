@@ -1,0 +1,18 @@
+2025-01-15 10:22:01 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20250115.log
+2025-01-15 10:22:01 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-01-15 10:22:01 | DEBUG    | trading_bot.client | → POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1736933521843, 'recvWindow': 5000, 'signature': '***'}
+2025-01-15 10:22:02 | DEBUG    | trading_bot.client | ← HTTP 200 | body={"orderId":4751823019,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"web_Xk9mP2qLvY3nZwR","price":"0","avgPrice":"43217.50","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"43.2175","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1736933522018}
+2025-01-15 10:22:02 | INFO     | trading_bot.orders | Order placed successfully: orderId=4751823019 status=FILLED
+2025-01-15 10:23:44 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20250115.log
+2025-01-15 10:23:44 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-01-15 10:23:44 | DEBUG    | trading_bot.client | → POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '45000', 'timeInForce': 'GTC', 'timestamp': 1736933624102, 'recvWindow': 5000, 'signature': '***'}
+2025-01-15 10:23:45 | DEBUG    | trading_bot.client | ← HTTP 200 | body={"orderId":4751824207,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"web_Yz7aB1cDeFgHiJ","price":"45000","avgPrice":"0.00000","origQty":"0.001","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1736933624351}
+2025-01-15 10:23:45 | INFO     | trading_bot.orders | Order placed successfully: orderId=4751824207 status=NEW
+2025-01-15 10:25:10 | INFO     | trading_bot | Logging initialised — writing to logs/trading_bot_20250115.log
+2025-01-15 10:25:10 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-01-15 10:25:10 | DEBUG    | trading_bot.client | → POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.01', 'stopPrice': '2200', 'timestamp': 1736933710456, 'recvWindow': 5000, 'signature': '***'}
+2025-01-15 10:25:11 | DEBUG    | trading_bot.client | ← HTTP 200 | body={"orderId":4751825901,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"web_Mn3oP8rSt5uVwX","price":"0","avgPrice":"0.00000","origQty":"0.01","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"STOP_MARKET","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"2200","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"STOP_MARKET","updateTime":1736933711099}
+2025-01-15 10:25:11 | INFO     | trading_bot.orders | Order placed successfully: orderId=4751825901 status=NEW
+2025-01-15 10:26:33 | WARNING  | trading_bot.client | API error: code=-2019 msg=Margin is insufficient. (HTTP 400)
+2025-01-15 10:26:33 | ERROR    | trading_bot.orders | Order placement failed: Binance API error -2019: Margin is insufficient. (HTTP 400)
+2025-01-15 10:27:55 | WARNING  | trading_bot.validators | Validation failed: Side must be one of ['BUY', 'SELL'], got 'LONG'.
